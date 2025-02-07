@@ -10,4 +10,5 @@ bot:
   check_solvable: true
   run_deps_from_wheel: true
   version_updates:
-    sources: pypi
+    sources: 
+      - pypi
