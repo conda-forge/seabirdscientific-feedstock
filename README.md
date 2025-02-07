@@ -9,6 +9,8 @@ Package license: MIT
 
 Summary: This is the repository for the Sea-Bird Scientific (SBS) Community Toolkit
 
+Development: https://github.com/Sea-BirdScientific/seabirdscientific/
+
 Documentation: https://github.com/Sea-BirdScientific/seabirdscientific/tree/main/documentation
 
 Current build status

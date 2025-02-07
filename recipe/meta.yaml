@@ -38,13 +38,13 @@ test:
     - python {{ python_min }}
 
 about:
-  summary: Sea-Bird Scientific Community Toolkit
   home: https://github.com/Sea-BirdScientific/seabirdscientific
   license: MIT
   license_file: LICENSE
-  doc_url: https://github.com/Sea-BirdScientific/seabirdscientific/tree/main/documentation
   summary: 'This is the repository for the Sea-Bird Scientific (SBS) Community Toolkit'
-
+  doc_url: https://github.com/Sea-BirdScientific/seabirdscientific/tree/main/documentation
+  dev_url: https://github.com/Sea-BirdScientific/seabirdscientific/
+  
 extra:
   recipe-maintainers:
     - darynwhite
