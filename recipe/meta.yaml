@@ -1,5 +1,5 @@
 {% set name = "seabirdscientific" %}
-{% set version = "2.5.2" %}
+{% set version = "2.5.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/seabirdscientific-{{ version }}.tar.gz
-  sha256: e78f185f2606706eb22c99fb0e28ce58cd700a711a77f8d92cdee7ebce04499f
+  sha256: 75e29eb39752fd91fa909a92d9094e723d00475997300cda0c8760df456e4d7c
 
 build:
   noarch: python
@@ -21,14 +21,24 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - gsw
-    - matplotlib-base
-    - numpy
-    - pandas
+    - gsw 
+    - matplotlib-base 
+    - numpy 
+    - pandas 
     - plotly >=6.0.0
-    - scipy
+    - scipy 
     # - twine 
     # - python-build 
+    # - pytest 
+    # - pylint 
+    # - pre-commit 
+    # - notebook 
+    # - nbformat 
+    # - mypy 
+    # - black 
+    # - twine 
+    # - python-build 
+    # - pytest-cov 
     # - pytest 
     # - pylint 
     # - pre-commit 
