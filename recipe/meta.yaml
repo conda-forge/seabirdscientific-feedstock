@@ -1,5 +1,5 @@
 {% set name = "seabirdscientific" %}
-{% set version = "2.5.3" %}
+{% set version = "2.5.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/seabirdscientific-{{ version }}.tar.gz
-  sha256: 75e29eb39752fd91fa909a92d9094e723d00475997300cda0c8760df456e4d7c
+  sha256: 7be8ae3ef2cda808042c9e8b473238d1ef24bae3835b6a629c8abce92f75e0dc
 
 build:
   noarch: python
@@ -29,6 +29,16 @@ requirements:
     - scipy 
     # - twine 
     # - python-build 
+    # - pytest 
+    # - pylint 
+    # - pre-commit 
+    # - notebook 
+    # - nbformat 
+    # - mypy 
+    # - black 
+    # - twine 
+    # - python-build 
+    # - pytest-cov 
     # - pytest 
     # - pylint 
     # - pre-commit 
