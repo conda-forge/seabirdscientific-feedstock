@@ -1,5 +1,5 @@
 {% set name = "seabirdscientific" %}
-{% set version = "2.7.1" %}
+{% set version = "2.7.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/seabirdscientific-{{ version }}.tar.gz
-  sha256: 8c69cf31fc3357dc61f11d05e7905d85730db26e43404d54303310cc86d2f4b2
+  sha256: 005adf9ceddfad28d82328474660c6bc7a6eaa9304757b99da881a2d6adbf652
 
 build:
   noarch: python
@@ -27,6 +27,14 @@ requirements:
     - pandas 
     - plotly >=6.0.0
     - scipy 
+    # - ruff 
+    # - python-build 
+    # - pytest-cov 
+    # - pytest 
+    # - notebook 
+    # - nbformat 
+    # - nbconvert 
+    # - kaleido 
     # - ruff 
     # - python-build 
     # - pytest-cov 
