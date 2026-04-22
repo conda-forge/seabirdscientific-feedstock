@@ -1,5 +1,5 @@
 {% set name = "seabirdscientific" %}
-{% set version = "2.7.8" %}
+{% set version = "2.7.9" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/seabirdscientific-{{ version }}.tar.gz
-  sha256: 085087b228862adb572f757171c5c621a1d46183b01a628c74d6a4a4911f02fe
+  sha256: 0067273c343835434f05b78261c2b69a82c4fd4cc63bff5402e9e102c384bbcb
 
 build:
   noarch: python
@@ -21,12 +21,12 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - gsw 
-    - matplotlib-base 
-    - numpy 
-    - pandas 
-    - plotly >=6.0.0
-    - scipy 
+    - gsw >=3.6.20,<3.7.dev0
+    - matplotlib-base >=3.9.4,<3.10.dev0
+    - numpy >=2.0.2,<2.1.dev0
+    - pandas >=2.3.3,<2.4.dev0
+    - plotly >=6.3.1,<6.4.dev0
+    - scipy >=1.13.1,<1.14.dev0
     # - ruff 
     # - python-build 
     # - pytest-cov 
@@ -83,6 +83,14 @@ requirements:
     # - nbconvert 
     # - kaleido 
     # - build 
+    # - ruff 
+    # - python-build 
+    # - pytest-cov 
+    # - pytest 
+    # - notebook 
+    # - nbformat 
+    # - nbconvert 
+    # - kaleido 
 
 test:
   imports:
