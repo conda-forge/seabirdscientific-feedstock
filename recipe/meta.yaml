@@ -1,5 +1,5 @@
 {% set name = "seabirdscientific" %}
-{% set version = "2.8.1" %}
+{% set version = "3.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/seabirdscientific-{{ version }}.tar.gz
-  sha256: bd59199970064ad3880d4edafab367219aa6d781513de28fac3a4f77e4afe4a2
+  sha256: b9b724bfabedf6a3edd26b484b0199ffc59ff01c0eca098cbeb04710d0fd29d4
 
 build:
   noarch: python
@@ -20,13 +20,15 @@ requirements:
     - setuptools >=61
     - pip
   run:
+    - seawater >=3.3.3
+    - xarray >=2024.10.0
     - python >={{ python_min }}
-    - gsw >=3.6.20,<3.7.dev0
-    - matplotlib-base >=3.9.4,<3.10.dev0
-    - numpy >=2.0.2,<2.1.dev0
-    - pandas >=2.3.3,<2.4.dev0
-    - plotly >=6.3.1,<6.4.dev0
-    - scipy >=1.13.1,<1.14.dev0
+    - gsw >=3.6.18
+    - matplotlib-base >=3.10.0
+    - numpy >=2.2.0
+    - pandas >=2.3.0
+    - plotly >=6.0.0
+    - scipy >=1.15.0
     # - ruff 
     # - python-build 
     # - pytest-cov 
@@ -107,6 +109,17 @@ requirements:
     # - nbformat 
     # - nbconvert 
     # - kaleido 
+    # - xarray >=2024.10.0
+    # - sphinx-mdinclude >=0.6.2
+    # - sphinx >=8.2.0
+    # - seawater >=3.3.3
+    # - sbsfuro >=0.1.0
+    # - notebook >=7.6.3
+    # - nbformat >=5.11.0
+    # - nbconvert >=7.17.0
+    # - kaleido >=1.0.0
+    # - ipython >=8.10.0
+    # - ipykernel >=6.30.0
 
 test:
   imports:
